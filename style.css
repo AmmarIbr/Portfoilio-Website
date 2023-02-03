@@ -1,0 +1,25 @@
+body {
+  background-color: #2f3c7e;
+}
+
+.navbar-custom {
+  background-color: #fbeaeb;
+}
+
+.first-section {
+  margin-top: 12%;
+}
+.intro-pic {
+  border-radius: 50px;
+}
+
+#carouselExampleIndicators {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -50%;
+}
