@@ -1,14 +1,12 @@
 body {
   background-color: #2f3c7e;
+  margin-top: 12%;
 }
 
 .navbar-custom {
   background-color: #fbeaeb;
 }
 
-.first-section {
-  margin-top: 15%;
-}
 .intro-pic {
   border-radius: 50px;
 }
@@ -16,10 +14,89 @@ body {
 #carouselExampleIndicators {
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 60%;
-  margin-left: 20%;
+  /* width: 60%;
+  margin-left: 20%; */
+}
+
+.hobby-img {
+  margin-top: 10px;
+  margin-left: -2px;
+  width: 70px;
+  height: 70px;
+}
+
+.icons {
+  background-color: white;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-radius: 7px;
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.548);
+  transition: all 0.15s ease-in-out;
+  color: transparent;
+}
+
+.icons:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.WOdesc {
+  margin-top: 20px;
+  width: 91px;
+  margin-left: -12px;
+}
+.COdesc {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.VGdesc {
+  margin-top: 20px;
+  width: 94px;
+  margin-left: -13px;
+}
+.TRdesc {
+  margin-top: 20px;
+  margin-left: 1px;
+}
+.SKdesc {
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .carousel-control-prev-icon {
   margin-left: -50%;
+}
+
+@media (min-width: 1400px) {
+  .about-body {
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-body {
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons {
+    margin: 20px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .icons {
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+  body {
+    margin-top: 20%;
+  }
+  .about-body {
+    margin-top: 35px;
+  }
 }

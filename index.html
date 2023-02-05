@@ -39,8 +39,8 @@
 
         <div class="collapse navbar-collapse" id="expandnav">
           <div class="navbar-nav">
-            <a href="index.html" class="nav-link text-black">Home</a>
-            <a href="Home" class="nav-link text-black">About</a>
+            <a href="#top" class="nav-link text-black">Home</a>
+            <a href="#about" class="nav-link text-black">About</a>
             <a href="Home" class="nav-link text-black">Contact</a>
           </div>
           <div class="social-media navbar-nav ms-auto">
@@ -89,70 +89,164 @@
       </div>
     </nav>
 
-    <article class="container first-section">
-      <section class="row main-body align-items-center">
-        <div class="col ">
-            <div class="row justify-content-center">
-                <h4 class=" col-md-10 text-light-emphasis align-self-start ">Aspiring Full-stack Developer</h4>
-                <h2 class=" col-md-10 text-white align-self-start">Hello, I am Ammar</h1>
-                <p class=" col-md-10 text-white align-self-start">
-                    I have a background in Mechanical Engineering and I am currently
-                    working towards becoming a Full-stack Developer.
-                </p>
-            </div>
+    <article class="container first-section" id="introhighlight">
+      <section class="row intro-body align-items-center">
+        <div class="col">
+          <div class="row justify-content-center">
+            <h4 class="col-md-10 text-light-emphasis align-self-start">
+              Aspiring Full Stack Engineer
+            </h4>
+            <h2 class="col-md-10 text-white align-self-start">
+              Hello, I am Ammar
+            </h2>
+            <p class="col-md-10 text-white align-self-start">
+              I have a background in Mechanical Engineering and I am currently
+              working towards becoming a Full Stack Engineer.
+            </p>
+          </div>
         </div>
         <img
-        src="./content/Intropicture.jpg"
-        class="img-fluid intro-pic col-sm-5"
-        alt="Profile Picture"
+          src="./content/Intropicture.jpg"
+          class="img-fluid intro-pic col-sm-5"
+          id="home"
+          alt="Profile Picture"
         />
-     </section>
+      </section>
+    </article>
+
+    <div id="about" style="visibility: hidden">About</div>
+
+    <article class="container about-body text-center">
+      <h1 class="text-white display-4">Here is a bit about me</h1>
+      <div class="row justify-content-center">
+        <p class="col-sm-8 text-white">
+          I started out learning about Pyhton shortly after my undergraduate
+          degree as I found the concept of coding interesting. Around the same
+          time I got the hang of the basics of Python I found a job in my field
+          of study. However, I never stopped thinking about the possibilities of
+          coding as a career. Towards the end of 2022 I have decided to fully
+          dedicate my time in learning and making the transition to become a
+          software developer.
+        </p>
+        <h2 class="col-10 text-white mt-5">Hobbies</h2>
+        <div class="col-10 text-white">
+          <section class="row hobbyicons text-center">
+            <section class="col-sm-2 icons">
+              <img
+                src="./content/gym-64.png"
+                class="hobby-img"
+                alt="Working Out Icon"
+              />
+              <p class="WOdesc">Working Out</p>
+            </section>
+            <section class="col-sm-2 icons">
+              <img
+                src="./content/coding-64.png"
+                class="hobby-img"
+                alt="Coding Icon"
+              />
+              <p class="COdesc">Coding</p>
+            </section>
+            <section class="col-sm-2 icons">
+              <img
+                src="./content/gaming-64.png"
+                class="hobby-img"
+                alt="Video Games icon"
+              />
+              <p class="VGdesc">Video Games</p>
+            </section>
+            <section class="col-sm-2 icons">
+              <img
+                src="./content/travel-64.png"
+                class="hobby-img"
+                alt="Travelling Icon"
+              />
+              <p class="TRdesc">Travelling</p>
+            </section>
+            <section class="col-sm-2 icons">
+              <img
+                src="./content/skiing-64.png"
+                class="hobby-img"
+                alt="Skiing Icon"
+              />
+              <p class="SKdesc">Skiing</p>
+            </section>
+          </section>
+        </div>
+      </div>
     </article>
 
     <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <article class="container first-section">
-                <section class="row main-body align-items-center">
-                  <div class="col ">
-                      <div class="row justify-content-center">
-                          <h4 class=" col-md-10 text-light-emphasis align-self-start ">Aspiring Full-stack Developer</h4>
-                          <h2 class=" col-md-10 text-white align-self-start">Hello, I am Ammar</h1>
-                          <p class=" col-md-10 text-white align-self-start">
-                              I have a background in Mechanical Engineering and I am currently
-                              working towards becoming a Full-stack Developer.
-                          </p>
-                      </div>
-                  </div>
-                  <img
-                  src="./content/Intropicture.jpg"
-                  class="img-fluid intro-pic col-sm-5"
-                  alt="Profile Picture"
-                  />
-               </section>
-              </article>
-          </div>
-          <div class="carousel-item">
-            
-          </div>
-          <div class="carousel-item">
-           
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <article class="container first-section">
+            <section class="row main-body align-items-center">
+              <div class="col">
+                <div class="row justify-content-center">
+                  <h4 class="col-md-10 text-light-emphasis align-self-start">
+                    Aspiring Full-stack Developer
+                  </h4>
+                  <h2 class="col-md-10 text-white align-self-start">
+                    Hello, I am Ammar
+                  </h2>
+                  <p class="col-md-10 text-white align-self-start">
+                    I have a background in Mechanical Engineering and I am
+                    currently working towards becoming a Full-stack Developer.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="./content/Intropicture.jpg"
+                class="img-fluid intro-pic col-sm-5"
+                alt="Profile Picture"
+              />
+            </section>
+          </article>
+        </div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
