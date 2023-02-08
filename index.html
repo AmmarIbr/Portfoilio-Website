@@ -1,262 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
-    <title>Ammar Ibrahim</title>
-  </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-custom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="./content/Brand.png"
-            alt="AI"
-            width="35"
-            height="29"
-            class="mb-1"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#expandnav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="expandnav">
-          <div class="navbar-nav">
-            <a href="#top" class="nav-link text-black">Home</a>
-            <a href="#about" class="nav-link text-black">About</a>
-            <a href="Home" class="nav-link text-black">Contact</a>
-          </div>
-          <div class="social-media navbar-nav ms-auto">
-            <a
-              class="nav-link text-grey"
-              href="https://www.linkedin.com/in/ammar-ibrahim-92b746177/"
-              target="_blank"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-linkedin"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                /></svg
-            ></a>
-            <a
-              class="nav-link text-grey ps-0 pe-3"
-              href="https://github.com/AmmarIbr"
-              target="_blank"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-github"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                /></svg
-            ></a>
-          </div>
-          <a
-            class="nav-link text-black"
-            href="./content/Ammar Ibrahim-Resume-TTC.pdf"
-            target="_blank"
-            ><button id="resumebtn" class="btn btn-outline-secondary ms-1">
-              Download Resume
-            </button></a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+  <title>Ammar Ibrahim</title>
+</head>
+
+<body>
+
+  <!-- This section is for the Nav bar -->
+
+  <nav class="navbar fixed-top navbar-expand-sm navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./content/Brand.png" alt="AI" width="35" height="29" class="mb-1" />
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#expandnav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="expandnav">
+        <div class="navbar-nav">
+          <a href="#top" class="nav-link text-black">Home</a>
+          <a href="#about" class="nav-link text-black">About</a>
+          <a href="#education" class="nav-link text-black">Experience & Education</a>
+          <a href="#contact" class="nav-link text-black">Contact Me</a>
+        </div>
+        <div class="social-media navbar-nav ms-auto">
+          <a class="nav-link text-grey" href="https://www.linkedin.com/in/ammar-ibrahim-92b746177/" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a>
+          <a class="nav-link text-grey ps-0 pe-3" href="https://github.com/AmmarIbr" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg></a>
+        </div>
+        <a class="nav-link text-black" href="./content/Ammar Ibrahim-Resume-TTC.pdf" target="_blank"><button
+            id="resumebtn" class="btn btn-outline-secondary">
+            Download Resume
+          </button></a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="container first-section" id="introhighlight">
+    <section class="row intro-body align-items-center">
+      <div class="col">
+        <div class="row justify-content-center">
+          <h4 class="col-md-10 text-light-emphasis align-self-start">
+            Aspiring Full Stack Engineer
+          </h4>
+          <h2 class="col-md-10 text-white align-self-start">
+            Hello, I am Ammar
+          </h2>
+          <p class="col-md-10 text-white align-self-start">
+            I have a background in Mechanical Engineering and I am currently
+            working towards becoming a Full Stack Engineer.
+          </p>
         </div>
       </div>
-    </nav>
+      <img src="./content/Intropicture.jpg" class="img-fluid intro-pic col-sm-5" id="home" alt="Profile Picture" />
+    </section>
+  </article>
 
-    <article class="container first-section" id="introhighlight">
-      <section class="row intro-body align-items-center">
-        <div class="col">
-          <div class="row justify-content-center">
-            <h4 class="col-md-10 text-light-emphasis align-self-start">
-              Aspiring Full Stack Engineer
-            </h4>
-            <h2 class="col-md-10 text-white align-self-start">
-              Hello, I am Ammar
-            </h2>
-            <p class="col-md-10 text-white align-self-start">
-              I have a background in Mechanical Engineering and I am currently
-              working towards becoming a Full Stack Engineer.
-            </p>
-          </div>
-        </div>
-        <img
-          src="./content/Intropicture.jpg"
-          class="img-fluid intro-pic col-sm-5"
-          id="home"
-          alt="Profile Picture"
-        />
-      </section>
-    </article>
+  <div id="about" style="visibility: hidden">About</div>
 
-    <div id="about" style="visibility: hidden">About</div>
-
-    <article class="container about-body text-center">
-      <h1 class="text-white display-4">Here is a bit about me</h1>
-      <div class="row justify-content-center">
-        <p class="col-sm-8 text-white">
-          I started out learning about Pyhton shortly after my undergraduate
-          degree as I found the concept of coding interesting. Around the same
-          time I got the hang of the basics of Python I found a job in my field
-          of study. However, I never stopped thinking about the possibilities of
-          coding as a career. Towards the end of 2022 I have decided to fully
-          dedicate my time in learning and making the transition to become a
-          software developer.
-        </p>
-        <h2 class="col-10 text-white mt-5">Hobbies</h2>
-        <div class="col-10 text-white">
-          <section class="row hobbyicons text-center">
-            <section class="col-sm-2 icons">
-              <img
-                src="./content/gym-64.png"
-                class="hobby-img"
-                alt="Working Out Icon"
-              />
-              <p class="WOdesc">Working Out</p>
-            </section>
-            <section class="col-sm-2 icons">
-              <img
-                src="./content/coding-64.png"
-                class="hobby-img"
-                alt="Coding Icon"
-              />
-              <p class="COdesc">Coding</p>
-            </section>
-            <section class="col-sm-2 icons">
-              <img
-                src="./content/gaming-64.png"
-                class="hobby-img"
-                alt="Video Games icon"
-              />
-              <p class="VGdesc">Video Games</p>
-            </section>
-            <section class="col-sm-2 icons">
-              <img
-                src="./content/travel-64.png"
-                class="hobby-img"
-                alt="Travelling Icon"
-              />
-              <p class="TRdesc">Travelling</p>
-            </section>
-            <section class="col-sm-2 icons">
-              <img
-                src="./content/skiing-64.png"
-                class="hobby-img"
-                alt="Skiing Icon"
-              />
-              <p class="SKdesc">Skiing</p>
-            </section>
+  <article class="container about-body text-center">
+    <h1 class="text-white display-4">Here is a bit about me</h1>
+    <div class="row justify-content-center">
+      <p class="col-sm-8 text-white">
+        My interest in coding led me to learn Python shortly after I completed my undergraduate degree. My job in my
+        field of study came along around the time I learned the basics of Python. Despite this, I never stopped thinking
+        about coding as a career option. By the end of 2022, I planned to fully dedicate my time to studying and
+        becoming a Full Stack Engineer.
+      </p>
+      <h2 class="col-10 text-white mt-5">Hobbies</h2>
+      <div class="col-10 text-white">
+        <section class="row hobbyicons text-center">
+          <section class="col-sm-2 icons">
+            <img src="./content/gym-64.png" class="hobby-img" alt="Working Out Icon" />
+            <p class="WOdesc">Working Out</p>
           </section>
-        </div>
+          <section class="col-sm-2 icons">
+            <img src="./content/coding-64.png" class="hobby-img" alt="Coding Icon" />
+            <p class="COdesc">Coding</p>
+          </section>
+          <section class="col-sm-2 icons">
+            <img src="./content/gaming-64.png" class="hobby-img" alt="Video Games icon" />
+            <p class="VGdesc">Video Games</p>
+          </section>
+          <section class="col-sm-2 icons">
+            <img src="./content/travel-64.png" class="hobby-img" alt="Travelling Icon" />
+            <p class="TRdesc">Travelling</p>
+          </section>
+          <section class="col-sm-2 icons">
+            <img src="./content/skiing-64.png" class="hobby-img" alt="Skiing Icon" />
+            <p class="SKdesc">Skiing</p>
+          </section>
+        </section>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <article class="container first-section">
-            <section class="row main-body align-items-center">
-              <div class="col">
-                <div class="row justify-content-center">
-                  <h4 class="col-md-10 text-light-emphasis align-self-start">
-                    Aspiring Full-stack Developer
-                  </h4>
-                  <h2 class="col-md-10 text-white align-self-start">
-                    Hello, I am Ammar
-                  </h2>
-                  <p class="col-md-10 text-white align-self-start">
-                    I have a background in Mechanical Engineering and I am
-                    currently working towards becoming a Full-stack Developer.
-                  </p>
+  <!--Following section is for the Tabbed carousel content (Experience, and Education)-->
+  <div id="education" style="visibility: hidden">Education</div>
+
+  <article class="edu-exp-section">
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active tab-custom" id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+          aria-selected="true">Experience</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link tab-custom" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Education</button>
+      </li>
+      <!-- <li class="nav-item" role="presentation">
+        <button class="nav-link tab-custom" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+      </li> -->
+    </ul>
+
+    <!-- This is the sub-section for tab content - carousel 1 -->
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <article class="carousel-custom">
+          <div id="carouselEducationIndicators" class="carousel slide ">
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#carouselEducationIndicators" data-bs-slide-to="0"
+                class="active carousel-buttons" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselEducationIndicators" data-bs-slide-to="1"
+                class="carousel-buttons" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner carousel-container">
+              <div class="carousel-item active">
+                <div class="container main-container">
+                  <div class="d-md-flex flex-md-row ">
+                    <div class="col">
+                      <div class="container sub-container ">
+                        <section class="row experince-container flex-column">
+                          <h4 class="col ">Machine Shop Supervisor - 2022-2023</h4>
+                          <div class="col">Romet Ltd.</div>
+                          <p class="col "><br>Supervised 51 team members across 4 shifts, and 17 CNC machines to
+                            ensure a safe and productive environment.<br>
+                            Led daily meetings with all machine shop staff to discuss various production issues and
+                            assist in removing production bottlenecks.
+                          </p>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="container sub-container ">
+                        <section class="row experince-container flex-column">
+                          <h4 class="col ">Manufacturing Engineering Tech. - 2021-2022</h4>
+                          <div class="col ">Romet Ltd.</div>
+                          <p class="col "><br>Improved assembly process by refining the build sequence,
+                            implementing tools, and material flow process increasing overall capacity by 70%.<br>
+                            Designed a casting porosity leak test fixture to increase inspection efficiency of incoming
+                            supplier parts.</p>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <img
-                src="./content/Intropicture.jpg"
-                class="img-fluid intro-pic col-sm-5"
-                alt="Profile Picture"
-              />
-            </section>
-          </article>
-        </div>
-        <div class="carousel-item"></div>
-        <div class="carousel-item"></div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+              <div class="carousel-item">
+                <div class="container main-container">
+                  <div class="d-md-flex flex-md-row ">
+                    <div class="col">
+                      <div class="container sub-container ">
+                        <section class="row experince-container flex-column">
+                          <h4 class="col ">Manufacturing Engineering Intern - 2019</h4>
+                          <div class="col">Recochem Inc.</div>
+                          <p class="col "> <br> Utilized Excel & VBA to design an automated barcode inventory system for
+                            part
+                            organization.<br>
+                            Performed Root Cause Analysis (RCA) on machinery issues to create troubleshooting
+                            procedures.
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+                          </p>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="container sub-container ">
+                        <section class="row experince-container flex-column">
+                          <h4 class="col ">Process Engineering Intern - 2018</h4>
+                          <div class="col ">Woodbridge Foam Corp.</div>
+                          <p class="col "><br>Analyzed scrap data for defective seats and organized meetings to ensure
+                            problems were communicated.<br>
+                            Consolidated all automotive seat mold samples to match company production standards.
+                          </p>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEducationIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEducationIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- This is the sub-section for tab content - carousel 2 -->
+
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="container main-container">
+          <div class="d-md-flex flex-md-row align-items-center">
+            <div class="col">
+              <div class="container sub-container">
+                <section class="row experince-container flex-column ">
+                  <h4 class="col ">Bachelor of Mechanical Engineering (Co-op)</h4>
+                  <div class="col">University of Guelph 2015-2020</div>
+                  <p class="col "><br>Cumalitive GPA: 3.68/4.0<br>
+                    Entrance Scholarship | Bob & Nancy Scholarship
+                    Dean's Honour List for 7 semesters <br>
+                    Intro to Programming - Language used: C
+                  </p>
+                </section>
+              </div>
+            </div>
+            <div class="col">
+              <div class="container sub-container ">
+                <section class="row experince-container flex-column">
+                  <h4 class="col ">Coursera</h4>
+                  <div class="col ">
+                    <ul>
+                      <li>Programming for Everybody (Python) - 2020</li>
+                      <li>Python Data Structures - 2020</li>
+                    </ul>
+                  </div>
+                  <h4 class="col ">Udemy</h4>
+                  <div class="col ">
+                    <ul>
+                      <li>Web Developer Bootcamp 2023 - Present
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS3</li>
+                          <li>JavaScript
+                            <ul>
+                              <li>NodeJS</li>
+                              <li>Express</li>
+                              <li>MongoDB</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>ReactJS - Planned</li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Tab 3</div> -->
+    </div>
+  </article>
+
+  <div id="contact"></div>
+  <h1 class="text-white display-4 text-center">Contact Me</h1>
+  <h2 class="text-white display-6 text-center">Please reach out to me for any inquiries!</h2>
+  <article class="contact-container mb-5">
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="firstname" class="form-label"></label>
+          <input type="text" class="form-control" id="firstname" aria-describedby="firstname" placeholder="First Name">
+        </div>
+        <div class="col-md-6 ">
+          <label for="lastname" class="form-label"></label>
+          <input type="text" class="form-control" id="lastname" aria-describedby="firstname" placeholder="Last Name">
+        </div>
+        <div class="col-md-6 ">
+          <label for="Email" class="form-label"></label>
+          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+            placeholder="email@address.com">
+        </div>
+        <div class=" col-md-6 ">
+          <label for="phonenum" class="form-label"></label>
+          <input type="numuber" class="form-control" id="phonenum" placeholder="Phone Number (444) 444 4444">
+        </div>
+        <div class="col">
+          <label for="textarea" class="form-label"></label>
+          <textarea class="form-control" id="textarea" rows="3" placeholder="Your Message"></textarea>
+        </div>
+      </div>
+      <div class="mb-3 mt-3 text-white">Your information will not be shared with anyone!</div>
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+
+  </article>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
