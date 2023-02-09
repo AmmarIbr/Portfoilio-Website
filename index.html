@@ -9,6 +9,31 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('Be3lcssLLZADZHJEV');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('service_2z2vlc1', 'template_bq5sbym', this)
+          .then(function () {
+            // console.log('SUCCESS!');
+            document.querySelector(".emailSuccessMessage").classList.remove("hidden")
+            setTimeout(function () { document.querySelector(".emailSuccessMessage").classList.add("hidden") }, 3000)
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
   <title>Ammar Ibrahim</title>
 </head>
 
@@ -286,33 +311,41 @@
   <h1 class="text-white display-4 text-center">Contact Me</h1>
   <h2 class="text-white display-6 text-center">Please reach out to me for any inquiries!</h2>
   <article class="contact-container mb-5">
-    <form>
+    <div class="hidden emailSuccessMessage text-center mt-3 rounded">
+      <h4 class=" text-success bg-light p-2 d-inline">Your message has been sent successfully!
+      </h4>
+    </div>
+    <form id="contact-form">
+      <input type="hidden" name="contact_number">
       <div class="row">
         <div class="col-md-6">
           <label for="firstname" class="form-label"></label>
-          <input type="text" class="form-control" id="firstname" aria-describedby="firstname" placeholder="First Name">
+          <input type="text" name="first_name" class="form-control" id="firstname" aria-describedby="firstname"
+            placeholder="First Name">
         </div>
         <div class="col-md-6 ">
           <label for="lastname" class="form-label"></label>
-          <input type="text" class="form-control" id="lastname" aria-describedby="firstname" placeholder="Last Name">
+          <input type="text" name="last_name" class="form-control" id="lastname" aria-describedby="firstname"
+            placeholder="Last Name">
         </div>
         <div class="col-md-6 ">
-          <label for="Email" class="form-label"></label>
-          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+          <label for="email" class="form-label"></label>
+          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
             placeholder="email@address.com">
         </div>
         <div class=" col-md-6 ">
-          <label for="phonenum" class="form-label"></label>
-          <input type="numuber" class="form-control" id="phonenum" placeholder="Phone Number (444) 444 4444">
+          <label for="subject" class="form-label"></label>
+          <input type="text" name="form_subject" class="form-control" id="subject" placeholder="Subject">
         </div>
         <div class="col">
           <label for="textarea" class="form-label"></label>
-          <textarea class="form-control" id="textarea" rows="3" placeholder="Your Message"></textarea>
+          <textarea name="text_area" class="form-control" id="textarea" rows="3" placeholder="Your Message"></textarea>
         </div>
       </div>
       <div class="mb-3 mt-3 text-white">Your information will not be shared with anyone!</div>
       <button type="submit" class="btn btn-secondary">Submit</button>
     </form>
+
 
   </article>
 
