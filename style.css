@@ -1,6 +1,6 @@
 body {
   background-color: #2f3c7e;
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .navbar-custom {
@@ -123,6 +123,9 @@ body {
 @media (min-width: 992px) {
   .about-body {
     margin-top: 110px;
+  }
+  .hobbyIcons {
+    width: 70%;
   }
 }
 
