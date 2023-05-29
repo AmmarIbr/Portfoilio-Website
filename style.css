@@ -11,6 +11,10 @@ body {
   border-radius: 50px;
 }
 
+.hobbyIcons {
+  width: 90%;
+}
+
 .hobby-img {
   margin-top: 10px;
   margin-left: -2px;
